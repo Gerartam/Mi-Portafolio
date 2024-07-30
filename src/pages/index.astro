@@ -5,9 +5,17 @@ import { Image } from 'astro:assets';
 ---
 
 <Layout title="Gerardo Tamayo">
-	<main>
-		<div class="flex justify-between my-10 bg-gray-900 mx-44 text-white rounded-2xl">
-			<Image src={perImage} alt="..." class="rounded-2xl bg-cover h-[550px]"></Image>
+	<main class="justify-between items-center">
+		<div class="flex md:flex-row flex-col">
+			<div class="mt-10 bg-gray-900 text-white md:w-1/2">
+				<Image src={perImage} alt="..." class="rounded-2xl bg-cover"></Image>
+			</div>
+			<div class="md:mt-10 md:w-1/2 w-full bg-white">
+				<h1 class="text-3xl text-center my-7">Pasisajes</h1>
+				<p class="mx-6 text-justify">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minima dignissimos voluptates delectus eveniet aut! Minima nam et nisi maiores quia beatae enim impedit. Harum beatae rem cumque magnam cum.	
+				</p>
+			</div>
 		</div>
 	</main>
 </Layout>
