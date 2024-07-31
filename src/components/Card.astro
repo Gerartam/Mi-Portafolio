@@ -5,14 +5,16 @@ import { Image } from 'astro:assets';
 ---
 
 <div class="flex md:flex-row flex-col">
-    <div class="bg-gray-900 text-white md:w-1/2">
+    <div class="text-white md:w-1/2">
         <Image src={perImage} alt="..." class="bg-cover h-full"></Image>
     </div>
-    <div class="md:w-1/2 w-full h-auto bg-white">
-        <h1 class="text-3xl text-center my-7">Paisajes</h1>
-        <p class="mx-6 text-justify text-sm pb-12">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minima dignissimos voluptates delectus eveniet aut! Minima nam et nisi maiores quia beatae enim impedit. Harum beatae rem cumque magnam cum.	
-        </p>
+    <div class="md:w-1/2 w-full h-auto bg-stone-600 text-white content-center">
+        <div class="w-1/2 mx-auto justify-center my-7">
+            <h1 class="text-3xl text-center pb-5">Paisajes</h1>
+            <p class="text-justify text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minima dignissimos voluptates delectus eveniet aut! Minima nam et nisi maiores quia beatae enim impedit. Harum beatae rem cumque magnam cum.	
+            </p>
+        </div>
     </div>
 </div>
 <div class="flex md:flex-row flex-col">
