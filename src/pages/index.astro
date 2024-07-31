@@ -2,20 +2,22 @@
 import Layout from '../layouts/Layout.astro';
 import perImage from '../assets/paisaje1.jpg';
 import { Image } from 'astro:assets';
+import Card from '../components/Card.astro';
 ---
 
 <Layout title="Gerardo Tamayo">
 	<main class="justify-between items-center">
-		<div class="flex md:flex-row flex-col">
-			<div class="mt-10 bg-gray-900 text-white md:w-1/2">
-				<Image src={perImage} alt="..." class="rounded-2xl bg-cover"></Image>
-			</div>
-			<div class="md:mt-10 md:w-1/2 w-full bg-white">
-				<h1 class="text-3xl text-center my-7">Pasisajes</h1>
-				<p class="mx-6 text-justify">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minima dignissimos voluptates delectus eveniet aut! Minima nam et nisi maiores quia beatae enim impedit. Harum beatae rem cumque magnam cum.	
-				</p>
+		<div class="h-full">
+			<div class="bg-center">
+				<Image src={perImage} alt="..." class="bg-cover h-max"></Image>
 			</div>
 		</div>
+		<div class="h-[700px] text-center">
+			<h1 class="text-3xl my-20 mx-16">Sobre mi</h1>
+			<p class="mx-24 md:mx-64">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit autem modi veniam, cum ipsa sed blanditiis alias cupiditate. Nostrum obcaecati odio id deleniti voluptate eius facilis praesentium voluptatum aliquid aliquam.</p>
+		</div>
+
+		<Card/>
+		<Card/>
 	</main>
 </Layout>
