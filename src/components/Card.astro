@@ -4,27 +4,32 @@ import perImage from '../assets/cusenier.jpeg';
 import { Image } from 'astro:assets';
 ---
 
-<div class="flex md:flex-row flex-col">
+<article class="flex md:flex-row flex-col">
     <div class="text-white md:w-1/2">
         <Image src={perImage} alt="..." class="bg-cover h-full"></Image>
     </div>
-    <div class="md:w-1/2 w-full h-auto bg-stone-600 text-white content-center">
-        <div class="w-1/2 mx-auto justify-center my-7">
-            <h1 class="text-3xl text-center pb-5">Paisajes</h1>
-            <p class="text-justify text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minima dignissimos voluptates delectus eveniet aut! Minima nam et nisi maiores quia beatae enim impedit. Harum beatae rem cumque magnam cum.	
-            </p>
+    <div class="md:w-1/2 w-full h-auto py-8 bg-stone-600 text-white content-center">
+        <div class="justify-center my-7 mx-auto">
+            <h1 class="text-3xl mb-8 w-40 mx-auto justify-center text-center border-b-2 pb-3">Conciertos</h1>
+			<p class="w-56 sm:w-1/2 mx-auto text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit autem modi veniam, cum ipsa sed blanditiis alias cupiditate. Nostrum obcaecati odio id deleniti voluptate eius facilis praesentium voluptatum aliquid aliquam.</p>
         </div>
     </div>
-</div>
-<div class="flex md:flex-row flex-col">
-    <div class="bg-gray-900 text-white md:w-1/2">
+</article>
+
+<article class="flex md:flex-row flex-col">
+    <div class="md:w-1/2 w-full h-auto py-8 bg-stone-600 text-white content-center md:block hidden">
+        <div class="justify-center my-5 mx-auto">
+            <h1 class="text-3xl mb-8 w-40 mx-auto justify-center text-center border-b-2 pb-3">Paisajes</h1>
+			<p class="w-56 sm:w-1/2 mx-auto text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit autem modi veniam, cum ipsa sed blanditiis alias cupiditate. Nostrum obcaecati odio id deleniti voluptate eius facilis praesentium voluptatum aliquid aliquam.</p>
+        </div>
+    </div>
+    <div class="text-white md:w-1/2">
         <Image src={perImage2} alt="..." class="bg-cover h-full"></Image>
     </div>
-    <div class="md:w-1/2 w-full h-auto bg-white">
-        <h1 class="text-3xl text-center my-7">Paisajes</h1>
-        <p class="mx-6 text-justify text-sm pb-12">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minima dignissimos voluptates delectus eveniet aut! Minima nam et nisi maiores quia beatae enim impedit. Harum beatae rem cumque magnam cum.	
-        </p>
+    <div class="md:w-1/2 w-full h-auto py-8 bg-stone-600 text-white content-center md:hidden block">
+        <div class="justify-center my-5 mx-auto">
+            <h1 class="text-3xl mb-8 w-40 mx-auto justify-center text-center border-b-2 pb-3">Paisajes</h1>
+			<p class="w-56 sm:w-1/2 mx-auto text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit autem modi veniam, cum ipsa sed blanditiis alias cupiditate. Nostrum obcaecati odio id deleniti voluptate eius facilis praesentium voluptatum aliquid aliquam.</p>
+        </div>
     </div>
-</div>
+</article>
