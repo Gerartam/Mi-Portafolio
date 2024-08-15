@@ -7,16 +7,16 @@ import { Image } from 'astro:assets';
 
 <Layout title="Gerardo Tamayo">
 	<main class="justify-between items-center">
-		<div style="background-image: url('/paisaje3.jpg'); background-size: cover; background-attachment: fixed;" class="bg-center h-[820px]">
+		<div style="background-image: url('/paisaje3.jpg'); background-size: cover; background-attachment: fixed;" class="bg-center h-[800px]">
 			
 		</div>
 		<div id="sobremi" class="flex flex-col h-auto py-24 bg-stone-200">
 			<div class="flex mb-8 mx-auto h-20 w-20 rounded-full">
 				<Image src={perImage} alt="..." class="h-20 w-20 rounded-full"></Image>
 			</div>
-			<h1 class="text-2xl lg:text-3xl mb-8 w-40 mx-auto text-center animate-fade-in-right animate-delay-1000 animate-duration-1000">Sobre mi</h1>
-			<p class="w-56 sm:w-1/3 mx-auto text-justify animate-fade-in-left animate-delay-1000 animate-duration-1000 mb-4 font-extralight"> Soy un fotógrafo de 20 años, vivo en Rosario, Argentina. Desde muy chico, la fotografía y la filmación han sido mi pasión.</p>
-			<p class="w-56 sm:w-1/3 mx-auto text-justify animate-fade-in-left animate-delay-1000 animate-duration-1000 font-extralight">Mi objetivo es plasmar momentos únicos y transmitir la esencia de cada actuación a través de mis fotos. Busco siempre nuevas formas de contar historias visuales que resuenen con el público.</p>
+			<h1 class="text-2xl lg:text-3xl mb-8 w-full text-center animate-fade-in-right animate-delay-1000 animate-duration-1000">Sobre mi</h1>
+			<p class="w-60 sm:w-1/3 mx-auto text-left animate-fade-in-left animate-delay-1000 animate-duration-1000 font-thin md:text-base text-sm pb-4"> Soy un fotógrafo de 20 años, vivo en Rosario, Argentina. Desde muy chico, la fotografía y la filmación han sido mi pasión.</p>
+			<p class="w-60 sm:w-1/3 mx-auto text-left animate-fade-in-left animate-delay-1000 animate-duration-1000 font-thin md:text-base text-sm">Mi objetivo es plasmar momentos únicos y transmitir la esencia de cada actuación a través de mis fotos. Busco siempre nuevas formas de contar historias visuales que resuenen con el público.</p>
 		</div>
 		<Card/>
 	</main>
