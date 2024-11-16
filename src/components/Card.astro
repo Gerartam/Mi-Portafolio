@@ -1,14 +1,14 @@
 ---
-import perImage from '../assets/flores1.png';
+import perImage from '../assets/flores1.webp';
 import perImage2 from '../assets/cusenier.jpeg';
-import perImage3 from '../assets/artema.jpg';
+import perImage3 from '../assets/artema.webp';
 import { Image } from 'astro:assets';
 import ButtonVM from '../components/ButtonVM.astro';
 ---
 
 <article class="flex flex-col md:flex-row">
     <div class="md:w-1/2 h-full relative overflow-hidden bg-cover bg-no-repeat">
-        <Image src={perImage3} alt="..." class="object-cover md:h-[540px] transition duration-300 ease-in-out hover:scale-110"></Image>
+        <Image src={perImage3} alt="..." class="object-cover md:h-[540px] transition duration-300 ease-in-out hover:scale-110" format="webp"></Image>
     </div>
     <div class="md:w-1/2 w-full bg-stone-700 text-stone-200 content-center">
         <div class="justify-center my-8 mx-10 sm:mx-16 lg:mx-24">
@@ -29,7 +29,7 @@ import ButtonVM from '../components/ButtonVM.astro';
         <ButtonVM/>
     </div>
     <div class="md:w-1/2 h-full relative overflow-hidden bg-cover bg-no-repeat">
-        <Image src={perImage2} alt="..." class="object-cover md:h-[540px] transition duration-300 ease-in-out hover:scale-110"></Image>
+        <Image src={perImage2} alt="..." class="object-cover md:h-[540px] transition duration-300 ease-in-out hover:scale-110" format="webp"></Image>
     </div>
     <div class="md:w-1/2 w-full bg-stone-700 text-stone-200 content-center md:hidden block">
         <div class="justify-center my-8 mx-10 sm:mx-16 lg:mx-24">
@@ -43,7 +43,7 @@ import ButtonVM from '../components/ButtonVM.astro';
 
 <article class="flex flex-col md:flex-row">
     <div class="md:w-1/2 h-full relative overflow-hidden bg-cover bg-no-repeat">
-        <Image src={perImage} alt="..." class="h-full object-cover md:h-[540px] transition duration-300 ease-in-out hover:scale-110"></Image>
+        <Image src={perImage} alt="..." class="h-full object-cover md:h-[540px] transition duration-300 ease-in-out hover:scale-110" format="webp"></Image>
     </div>
     <div class="md:w-1/2 w-full bg-stone-700 text-stone-200 content-center">
         <div class="justify-center my-8 mx-10 sm:mx-16 lg:mx-24">
