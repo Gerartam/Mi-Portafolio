@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import perImage1 from '../assets/flores1.webp';
-import perImage2 from '../assets/cusenier.jpeg';
+import perImage2 from '../assets/cusenier.webp';
 import perImage5 from '../assets/cusenier4.webp';
 import perImage6 from '../assets/cusenier5.webp';
 import perImage7 from '../assets/flores2.webp';
@@ -29,8 +29,7 @@ const images = [
         {images.map((image) => (
             <div class="relative overflow-hidden bg-cover bg-no-repeat rounded-lg">
                 <Image
-                    src={image.src} 
-                    alt={image.alt} 
+                    src={image.src} alt={image.alt} 
                     class="w-full h-full object-cover rounded-lg transition duration-300 ease-in-out hover:scale-110"
                     format="webp"
                 />

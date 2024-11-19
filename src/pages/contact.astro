@@ -5,17 +5,17 @@ import Layout from "../layouts/Layout.astro"
 <Layout title="Contact | Gerardo Tamayo">
     <body>
         <div class="my-24 mx-auto w-2/6 h-96 rounded-2xl bg-stone-300">
-            <form action="" method="post" class="p-20">
-                <label for="POST-name">Nombre:</label><br>
-                <input id="POST-name" type="text" name="name"/><br>
+            <form action="" method="POST" class="p-20">
+                <label for="name">Nombre:</label><br>
+                <input id="name" type="text" name="name" required/><br>
 
-                <label for="POST-name">Apellido:</label><br>
-                <input id="POST-name" type="text" name="name"/><br>
+                <label for="email">Email:</label><br>
+                <input id="email" type="text" name="email" required/><br>
+
+                <label for="message">Mensaje:</label><br>
+                <input id="message" type="text" name="message" required/><br>
                 
-                <label for="POST-name">Mail:</label><br>
-                <input id="POST-name" type="text" name="name"/><br>
-                
-                <input type="submit" class="bg-gray-700 p-2 rounded-2xl text-white"/>
+                <button type="submit" class="bg-gray-700 p-2 rounded-2xl text-white">Enviar</button>
             </form>
         </div>
     </body>
