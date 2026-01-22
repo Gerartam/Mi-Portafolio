@@ -3,20 +3,23 @@ import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout title="Contact | Gerardo Tamayo">
-    <body>
-        <div class="my-24 mx-auto w-2/6 h-96 rounded-2xl bg-stone-300">
-            <form action="" method="POST" class="p-20">
-                <label for="name">Nombre:</label><br>
-                <input id="name" type="text" name="name" required/><br>
+    <main 
+        style="background-image: url('/fondo2.webp'); background-size: cover; background-attachment: fixed;" 
+        class="bg-center min-h-screen flex items-center justify-center px-4 py-24"
+    >
+        <div class="w-full max-w-lg rounded-2xl bg-stone-300/90 p-8 shadow-md backdrop-blur-sm">
+            <form action="" method="POST" class="flex flex-col gap-4">
+                <label for="name">Nombre:</label>
+                <input id="name" type="text" name="name" class="p-2 rounded-md" required/>
 
-                <label for="email">Email:</label><br>
-                <input id="email" type="text" name="email" required/><br>
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" class="p-2 rounded-md" required/>
 
-                <label for="message">Mensaje:</label><br>
-                <input id="message" type="text" name="message" required/><br>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" class="p-2 rounded-md" required></textarea>
                 
-                <button type="submit" class="bg-gray-700 p-2 rounded-2xl text-white">Enviar</button>
+                <button type="submit" class="bg-gray-700 p-3 rounded-2xl text-white mt-4">Enviar</button>
             </form>
         </div>
-    </body>
+    </main>
 </Layout>
